@@ -75,7 +75,6 @@ body {
 
 .nav-links .discord:hover {
   background: white;
-  color: #07110d;
 }
 
 
@@ -90,12 +89,11 @@ body {
   align-items: center;
   justify-content: center;
 
-  background:
-    radial-gradient(
-      circle at center,
-      #123d2a 0%,
-      #07110d 70%
-    );
+  background: radial-gradient(
+    circle at center,
+    #123d2a 0%,
+    #07110d 70%
+  );
 }
 
 .hero h1 {
@@ -117,7 +115,7 @@ body {
 
 
 /* =========================
-   NEW VIDEO
+   NEW VIDEO - HOME
 ========================= */
 
 .new-video {
@@ -128,17 +126,55 @@ body {
   text-align: center;
   color: #39ff88;
   letter-spacing: 4px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   font-size: 28px;
+
+  text-shadow: 0 0 10px rgba(57, 255, 136, 0.4);
 }
+
+
+/* CREATOR PFP + NAME */
+
+.creator {
+  max-width: 850px;
+  margin: 0 auto 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.default-avatar {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #16231d;
+  border: 2px solid #39ff88;
+  border-radius: 50%;
+
+  font-size: 35px;
+
+  box-shadow: 0 0 12px rgba(57, 255, 136, 0.25);
+}
+
+.creator h3 {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+
+/* VIDEO */
 
 .video-card {
   max-width: 850px;
   margin: auto;
 }
-
-
-/* VIDEO COMING SOON */
 
 .video-placeholder {
   height: 400px;
@@ -174,40 +210,6 @@ body {
 .coming-soon p {
   margin-top: 10px;
   color: #aaaaaa;
-}
-
-
-/* =========================
-   CREATOR
-========================= */
-
-.creator {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  margin-top: 25px;
-}
-
-.default-avatar {
-  width: 70px;
-  height: 70px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: #16231d;
-  border: 2px solid #39ff88;
-  border-radius: 50%;
-
-  font-size: 35px;
-}
-
-.creator h3 {
-  margin-top: 10px;
-  color: white;
-  font-size: 16px;
 }
 
 
@@ -287,6 +289,10 @@ body {
     justify-content: center;
   }
 
+  .hero {
+    height: 220px;
+  }
+
   .hero h1 {
     font-size: 40px;
   }
@@ -297,6 +303,20 @@ body {
 }
 
 @media (max-width: 700px) {
+
+  .new-video {
+    padding: 50px 6%;
+  }
+
+  .creator h3 {
+    font-size: 17px;
+  }
+
+  .default-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
 
   .about-section {
     padding: 60px 6%;
